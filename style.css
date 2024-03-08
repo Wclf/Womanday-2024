@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1a8db;
+    overflow: hidden;
+}
+
+#woman {
+    position: absolute;
+    animation: cloud-movement ease-in-out 15s ;
+    height: 100vh;
+    transform: translateX(-300px) scale(2.35);
+
+
+}   
+
+
+
+@keyframes cloud-movement {
+    0% {
+      transform: translateX(3000px) scale(30.5);
+
+    }
+
+    33% {
+      transform: translateX(1700px) translateY(100px) scale(5.5);
+    }
+
+    66% {
+      transform: translateX(300px)  scale(2.1);
+
+    }
+
+
+
+    100% {
+      transform: translateX(-300px) scale(2.35);
+    }
+} 
+
+
+.flower {
+  transform-origin: top left;
+  transform-box: fill-box;
+}
+
+.hair-1 {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: hair-1-movement linear 1.5s infinite alternate;
+}
+
+.hair-1-slow {
+  animation-duration: 2s;
+}
+
+.hair-1-slower {
+  animation-duration: 2.5s;
+}
+
+@keyframes hair-1-movement {
+    0% {
+      transform:  translateY(5px) rotate(5deg);
+    }
+
+    100% {
+      transform: translateY(-5px) rotate(-5deg);
+    }
+}
+
+.hair-2 {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: hair-2-movement linear 2.5s infinite alternate;
+}
+
+@keyframes hair-2-movement {
+  0% {
+    transform:  translateY(5px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}
+
+.cls-2 {
+  transform-origin: top right;
+  transform-box: fill-box;
+  animation: cls-2-movement linear 1.9s infinite alternate;
+}
+
+@keyframes cls-2-movement {
+  0% {
+    transform:  rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.cls-3 {
+  transform-origin: bottom right;
+  transform-box: fill-box;
+  animation: cls-3-movement linear 1.8s infinite alternate;
+}
+
+@keyframes cls-3-movement {
+  0% {
+    transform:  rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.leaf-5 {
+  transform-origin: bottom right;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2s infinite alternate;
+
+}
+
+@keyframes leaf-5-movement {
+  0% {
+    transform:  rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.leaf-6 {
+  transform-origin: bottom right;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.2s infinite alternate;
+
+}
+
+
+
+.leaf-7 {
+  transform-origin: bottom left;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.3s infinite alternate;
+
+}
+
+.leaf-8 {
+  transform-origin: top;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.1s infinite alternate;
+
+}
+
+.leaf-9 {
+  transform-origin: top;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2s infinite alternate;
+
+}
+
+.leaf-10 {
+  transform-origin: top;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.2s infinite alternate;
+
+}
+
+.leaf-11 {
+  transform-origin: top left;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.3s infinite alternate;
+
+}
+
+.main-flower  {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 3s infinite alternate;
+}
+
+.small-flower {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: leaf-5-movement linear 2.5s infinite alternate;
+}
+
+.leaf-22 {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: leaf-22-movement linear 15s  ;
+  animation-delay: 11.2s;
+  transform: translateX(2000px) translateY(-500px) rotate(360deg);
+  
+}
+
+@keyframes leaf-22-movement {
+  0% {
+    transform:  rotate(-360deg);
+  }
+
+  10% {
+    transform: translateX(200px) translateY(-100px) rotate(360deg);
+
+  }
+
+  100% {
+    transform: translateX(2000px) translateY(-500px) rotate(360deg);
+  }
+}
+
+.title {
+  font-size: 70px;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0; 
+}
+
+
+
